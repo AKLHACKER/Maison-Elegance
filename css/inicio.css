@@ -1,0 +1,700 @@
+:root {
+    --amarillo-transparente: #F5EFC6;
+    --rojo-cetro: #4D0E12;
+    --azul-ceruleo: #A5BCD6;
+    --tierra-macetas: #4A2E27;
+    --cafe-java: #231815;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Cormorant Garamond", serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav .Marca {
+    width: 110px;
+}
+
+aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--cafe-java);
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    align-items: center;
+}
+
+.Carrito-texto {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25px;
+    margin-right: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: var(--amarillo-transparente);
+}
+
+header>nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.Contenido-M {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: 23px;
+}
+
+.Opciones {
+    margin-left: auto;
+}
+
+.Opciones nav {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.Opciones a {
+    text-decoration: none;
+    color: var(--cafe-java);
+    font-size: 30px;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+
+.Opciones a.Activo {
+    background-color: var(--rojo-cetro);
+    color: white;
+}
+
+.contenedor-imagen {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.texto-encima {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transform: translateY(-60%);
+    color: white;
+    z-index: 2;
+    font-size: 70px;
+}
+
+.texto-encima button {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: var(--rojo-cetro);
+    color: white;
+    border: 1px solid white;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.texto-encima button:hover {
+    transform: scale(1.1);
+}
+
+.Productos-destacados {
+    font-size: 65px;
+    text-align: center;
+    margin: 20px;
+}
+
+.Contenedor-productos {
+    background-color: var(--amarillo-transparente);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 30px;
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Items {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.Items h3 {
+    font-size: 50px;
+}
+
+.Items p {
+    font-size: 40px;
+    color: var(--rojo-cetro);
+    font-weight: bold;
+}
+
+.Items button {
+    font-size: 40px;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    background-color: var(--rojo-cetro);
+    color: white;
+    font-weight: bold;
+}
+
+.Items img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+    border-radius: 30px;
+}
+
+.Items img:hover {
+    transform: scale(0.9);
+}
+
+.Contenedor-productos button {
+    transition: transform 0.3s ease;
+}
+
+.Contenedor-productos button:hover {
+    background-color: var(--azul-ceruleo);
+    transform: scale(1.1);
+    color: var(--rojo-cetro);
+    font-weight: bold;
+}
+
+.Beneficios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    background-color: var(--azul-ceruleo);
+}
+
+.Carrito {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Texto {
+    margin: 20px;
+}
+
+.Escudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Auricular {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Devolucion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Suscripcion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px;
+    background-color: var(--rojo-cetro);
+    width: 100%;
+    color: white;
+    gap: 20px;
+    border: 7px solid white;
+}
+
+.Documento {
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+}
+
+.formularios input {
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 410px;
+    margin: 40px;
+}
+
+.infoboton {
+    display: flex;
+    flex-direction: column;
+}
+
+.formularios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.formularios button {
+    font-size: 50px;
+    width: 300px;
+    height: 80px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.formularios button:hover {
+    transform: scale(1.1);
+}
+
+.Marca-footer {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    margin-left: 100px;
+    filter: brightness(0) invert(1);
+}
+
+.Footer-M {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--tierra-macetas);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Footer-M p {
+    font-size: 60px;
+    margin-left: 90px;
+}
+
+.Footer-M .info1 {
+    flex-direction: column;
+    font-size: 30px;
+    margin-left: 106px;
+}
+
+.Footer-M .info2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    margin-left: 80px;
+}
+
+.Redes2 {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-left: 78px;
+    margin-top: 15px;
+}
+
+.Enlaces {
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    display: flex;
+    gap: 30px;
+}
+
+.Enlaces a {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+/* ---------- Laptop pequeña / tablet horizontal ---------- */
+@media (max-width: 1200px) {
+
+    aside {
+        font-size: 24px;
+    }
+
+    .Opciones a {
+        font-size: 24px;
+        padding: 6px 12px;
+    }
+
+    .texto-encima {
+        font-size: 50px;
+    }
+
+    .texto-encima button {
+        font-size: 24px;
+    }
+
+    .Productos-destacados {
+        font-size: 52px;
+    }
+
+    .Contenedor-productos {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 25px;
+    }
+
+    .Items h3 {
+        font-size: 40px;
+    }
+
+    .Items p {
+        font-size: 32px;
+    }
+
+    .Items button {
+        font-size: 30px;
+        padding: 15px;
+    }
+
+    .Beneficios {
+        flex-wrap: wrap;
+        font-size: 24px;
+    }
+
+    .Suscripcion {
+        font-size: 24px;
+    }
+
+    .formularios input {
+        width: 320px;
+        font-size: 24px;
+        margin: 20px;
+    }
+
+    .formularios button {
+        font-size: 38px;
+        width: 250px;
+    }
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 992px) {
+
+    header {
+        padding: 10px 20px;
+    }
+
+    header>nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Opciones {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .Opciones nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .texto-encima {
+        font-size: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .texto-encima button {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .Productos-destacados {
+        font-size: 44px;
+    }
+
+    .Items img {
+        height: 380px;
+    }
+
+    .Suscripcion {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .Marca-footer {
+        margin-left: 0;
+    }
+
+    .Footer-M {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .Footer-M p,
+    .Footer-M .info1,
+    .Footer-M .info2 {
+        margin-left: 0;
+    }
+
+    .Redes2 {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
+/* ---------- Celular grande / tablet vertical ---------- */
+@media (max-width: 768px) {
+
+    aside {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        font-size: 18px;
+    }
+
+    .Carrito-texto {
+        flex-direction: column;
+    }
+
+    .Redes {
+        margin-right: 0;
+        gap: 20px;
+    }
+
+    aside svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    nav .Marca {
+        width: 80px;
+    }
+
+    .Contenido-M {
+        font-size: 18px;
+    }
+
+    .Opciones a {
+        font-size: 20px;
+    }
+
+    .texto-encima {
+        font-size: 28px;
+        left: 6%;
+    }
+
+    .texto-encima button {
+        font-size: 16px;
+        padding: 8px 14px;
+    }
+
+    .Productos-destacados {
+        font-size: 36px;
+    }
+
+    .Contenedor-productos {
+        grid-template-columns: 1fr;
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .Items h3 {
+        font-size: 34px;
+    }
+
+    .Items p {
+        font-size: 28px;
+    }
+
+    .Items button {
+        font-size: 24px;
+    }
+
+    .Items img {
+        height: 320px;
+    }
+
+    .Beneficios {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 30px;
+        font-size: 22px;
+    }
+
+    .Suscripcion {
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    .Documento {
+        width: 80px;
+        height: 80px;
+    }
+
+    .formularios input {
+        width: 100%;
+        font-size: 20px;
+        padding: 12px;
+        margin: 15px 0;
+    }
+
+    .formularios button {
+        font-size: 28px;
+        width: 100%;
+        height: 60px;
+    }
+
+    .Footer-M p {
+        font-size: 40px;
+    }
+
+    .Footer-M .info1,
+    .Footer-M .info2 {
+        font-size: 20px;
+    }
+
+    .Marca-footer {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* ---------- Celular pequeño ---------- */
+@media (max-width: 480px) {
+
+    aside {
+        font-size: 15px;
+    }
+
+    .Contenido-M h1 {
+        font-size: 28px;
+    }
+
+    .Contenido-M {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .Opciones a {
+        font-size: 17px;
+        padding: 5px 8px;
+    }
+
+    .texto-encima {
+        font-size: 20px;
+    }
+
+    .texto-encima p {
+        font-size: 14px;
+    }
+
+    .texto-encima button {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .Productos-destacados {
+        font-size: 30px;
+    }
+
+    .Items h3 {
+        font-size: 28px;
+    }
+
+    .Items p {
+        font-size: 24px;
+    }
+
+    .Items button {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    .Items img {
+        height: 260px;
+    }
+
+    .Beneficios {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .Beneficios svg {
+        width: 45px;
+        height: 55px;
+    }
+
+    .Suscripcion {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .Footer-M p {
+        font-size: 32px;
+    }
+
+    .Footer-M .info1,
+    .Footer-M .info2 {
+        font-size: 16px;
+    }
+
+    .Redes2 {
+        gap: 20px;
+    }
+
+    .Redes2 svg {
+        width: 30px;
+        height: 30px;
+    }
+}

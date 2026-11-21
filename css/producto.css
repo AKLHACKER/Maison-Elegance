@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Petit+Formal+Script&display=swap');
+
+:root {
+    --amarillo-transparente: #F5EFC6;
+    --rojo-cetro: #4D0E12;
+    --azul-ceruleo: #A5BCD6;
+    --tierra-macetas: #4A2E27;
+    --cafe-java: #231815;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+}
+
+header {
+    background-color: var(--rojo-cetro);
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+}
+
+main h1 {
+    font-size: 70px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contenedor-titulo {
+    background-color: #4D0E12;
+    margin: 25px;
+    border-radius: 15px;
+    color: white;
+
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    align-items: center;
+}
+
+.contenedor-header .info-izquierda {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.contenedor-header .info-izquierda img {
+    filter: brightness(0) invert(1);
+    width: 90px;
+}
+
+.contenedor-header .info-derecha .fa-user {
+    font-size: 35px;
+    transition: all 0.3s ease;
+}
+
+.info-derecha .fa-square-instagram {
+    font-size: 35px;
+    transition: all 0.3s ease;
+}
+
+.info-derecha .fa-facebook-f {
+    font-size: 35px;
+    transition: all 0.3s ease;
+}
+
+.info-derecha .fa-tiktok {
+    font-size: 35px;
+    transition: all 0.3s ease;
+}
+
+.info-derecha .fa-youtube {
+    font-size: 35px;
+    transition: all 0.3s ease;
+}
+
+.fa-user:hover {
+    transform: scale(1.3);
+}
+
+.fa-square-instagram:hover {
+    transform: scale(1.3);
+}
+
+.fa-facebook-f:hover {
+    transform: scale(1.3);
+}
+
+.fa-tiktok:hover {
+    transform: scale(1.3);
+}
+
+.fa-youtube:hover {
+    transform: scale(1.3);
+}
+
+.contenedor-header .info-medio a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--amarillo-transparente);
+    margin: 10px;
+    font-family: "Cormorant Garamond", serif;
+    transition: transform 0.3s ease;
+
+    margin: 30px;
+}
+
+
+.contenedor-header .info-medio a:hover {
+    transform: translatey(-5px);
+    color: white;
+}
+
+header .info-medio .Activo {
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 2px;
+
+}
+
+
+
+
+
+
+.articulos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+    background-color: var(--amarillo-transparente);
+    margin: 30px;
+    border-radius: 20px;
+
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.articulos .Descripcion {
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.articulos .precio {
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(109, 151, 167);
+}
+
+.articulos .Item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 20px;
+    background-color: white;
+    margin: 20px;
+
+    align-items: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.articulos img {
+    width: 400px;
+    height: 400px;
+
+    transition: all 0.3s ease;
+}
+
+.articulos img:hover {
+    transform: scale(1.05);
+}
+
+.articulos h3 {
+    font-size: 50px;
+    text-align: center;
+    color: var(--rojo-cetro);
+    font-weight: 900;
+}
+
+.articulos p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.articulos button {
+    font-size: 30px;
+    height: 80px;
+    width: auto;
+    margin: 20px;
+    padding: 15px;
+
+    border: none;
+    background-color: var(--rojo-cetro);
+    color: white;
+    font-size: 45px;
+    border-radius: 15px;
+
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.fa-cart-plus {
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.articulos button:hover {
+    transform: scale(1.05);
+    background-color: var(--azul-ceruleo);
+    color: var(--rojo-cetro);
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.colores {
+    display: flex;
+    gap: 12px;
+}
+
+.articulos .color {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #4D0E12;
+    border-radius: 50%;
+}
+
+.articulos .color-2 {
+    display: flex;
+    flex-direction: row;
+    width: 40px;
+    height: 40px;
+    background-color: #a00000;
+    border-radius: 50%;
+}
+
+.contenedor-footer {
+    display: flex;
+    background-color: var(--cafe-java);
+    align-items: center;
+    box-shadow: 10px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+.contenedor-footer img {
+    filter: brightness(0) invert(1);
+    width: 90px;
+    margin-left: 20px;
+}
+
+
+
+.contenedor-footer p {
+    color: white;
+    font-size: 40px;
+}
+
+.contenedor-footer .derechos {
+    font-size: 25px;
+    margin-left: 400px;
+}
+
+/* ==========================================
+   MEDIA QUERIES — pegar al FINAL de tu CSS
+   (de escritorio hacia móvil)
+   ========================================== */
+
+/* ---------- Laptops pequeñas (hasta 1200px) ---------- */
+@media (max-width: 1200px) {
+    main h1 {
+        font-size: 56px;
+    }
+
+    .contenedor-header .info-medio a {
+        font-size: 26px;
+        margin: 20px;
+    }
+
+    /* Grid de artículos: 2 columnas */
+    .articulos {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 25px;
+        padding: 20px;
+    }
+
+    /* La imagen ya no puede medir 400px fijos */
+    .articulos img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    .contenedor-footer .derechos {
+        margin-left: 150px;
+    }
+}
+
+/* ---------- Tablets (hasta 992px) ---------- */
+@media (max-width: 992px) {
+    header {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    /* Header: logo + iconos arriba, menú abajo */
+    .contenedor-header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .contenedor-header .info-izquierda img {
+        width: 75px;
+    }
+
+    .contenedor-header .info-medio {
+        order: 3;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedor-header .info-medio a {
+        font-size: 24px;
+        margin: 10px 18px;
+    }
+
+    .contenedor-header .info-derecha .fa-user,
+    .info-derecha .fa-square-instagram,
+    .info-derecha .fa-facebook-f,
+    .info-derecha .fa-tiktok,
+    .info-derecha .fa-youtube {
+        font-size: 28px;
+    }
+
+    main h1 {
+        font-size: 46px;
+    }
+
+    .contenedor-titulo {
+        margin: 20px;
+    }
+
+    .articulos h3 {
+        font-size: 40px;
+    }
+
+    .articulos .precio {
+        font-size: 42px;
+    }
+
+    .articulos p {
+        font-size: 26px;
+    }
+
+    .articulos button {
+        height: auto;
+        font-size: 34px;
+    }
+
+    .fa-cart-plus {
+        font-size: 32px;
+    }
+
+    /* Footer en columna */
+    .contenedor-footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        gap: 5px;
+    }
+
+    .contenedor-footer img {
+        margin-left: 0;
+        width: 70px;
+    }
+
+    .contenedor-footer p {
+        font-size: 32px;
+    }
+
+    .contenedor-footer .derechos {
+        margin-left: 0;
+        font-size: 22px;
+    }
+}
+
+/* ---------- Móviles grandes (hasta 768px) ---------- */
+@media (max-width: 768px) {
+    .contenedor-header .info-izquierda img {
+        width: 60px;
+    }
+
+    .contenedor-header .info-medio a {
+        font-size: 20px;
+        margin: 8px 12px;
+    }
+
+    .contenedor-header .info-derecha .fa-user,
+    .info-derecha .fa-square-instagram,
+    .info-derecha .fa-facebook-f,
+    .info-derecha .fa-tiktok,
+    .info-derecha .fa-youtube {
+        font-size: 24px;
+    }
+
+    main h1 {
+        font-size: 38px;
+    }
+
+    /* Grid de artículos: 1 columna */
+    .articulos {
+        grid-template-columns: 1fr;
+        margin: 15px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .articulos .Item {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .articulos .Descripcion {
+        font-size: 18px;
+    }
+
+    .articulos h3 {
+        font-size: 34px;
+    }
+
+    .articulos .precio {
+        font-size: 36px;
+    }
+
+    .articulos p {
+        font-size: 22px;
+    }
+
+    .articulos button {
+        font-size: 28px;
+        padding: 12px 20px;
+        margin: 10px;
+    }
+
+    .fa-cart-plus {
+        font-size: 28px;
+    }
+
+    .articulos .color,
+    .articulos .color-2 {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* ---------- Móviles pequeños (hasta 480px) ---------- */
+@media (max-width: 480px) {
+    .contenedor-header .info-medio a {
+        font-size: 17px;
+        margin: 6px 8px;
+    }
+
+    .contenedor-header .info-derecha .fa-user,
+    .info-derecha .fa-square-instagram,
+    .info-derecha .fa-facebook-f,
+    .info-derecha .fa-tiktok,
+    .info-derecha .fa-youtube {
+        font-size: 20px;
+    }
+
+    main h1 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .contenedor-titulo {
+        margin: 12px;
+        border-radius: 12px;
+    }
+
+    .articulos {
+        margin: 10px;
+    }
+
+    .articulos h3 {
+        font-size: 28px;
+    }
+
+    .articulos .precio {
+        font-size: 30px;
+    }
+
+    .articulos p {
+        font-size: 20px;
+    }
+
+    .articulos button {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .fa-cart-plus {
+        font-size: 24px;
+    }
+
+    .contenedor-footer p {
+        font-size: 26px;
+    }
+
+    .contenedor-footer .derechos {
+        font-size: 18px;
+    }
+}
