@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Petit+Formal+Script&display=swap');
+
+
 :root {
     --amarillo-transparente: #F5EFC6;
     --rojo-cetro: #4D0E12;
@@ -320,7 +323,6 @@ form button:hover {
 
 .contenedor-redes {
     display: flex;
-
 }
 
 .contenedor-redes .redes {
@@ -330,7 +332,6 @@ form button:hover {
 }
 
 .contenedor-redes p {
-
     font-size: 30px;
     margin-bottom: 15px;
 }
@@ -338,20 +339,44 @@ form button:hover {
 
 .fa-square-instagram {
     font-size: 40px;
+    transition: all 0.3s ease;
 
 }
 
 .fa-facebook-f {
     font-size: 40px;
+    transition: all 0.3s ease;
 }
 
 .fa-tiktok {
     font-size: 40px;
+    transition: all 0.3s ease;
+
 }
 
 .fa-youtube {
     font-size: 40px;
+    transition: all 0.3s ease;
 }
+
+
+.fa-square-instagram:hover {
+
+    transform: scale(1.1);
+}
+
+.fa-facebook-f:hover {
+    transform: scale(1.1);
+}
+
+.fa-tiktok:hover {
+    transform: scale(1.1);
+}
+
+.fa-youtube:hover {
+    transform: scale(1.1);
+}
+
 
 .contenedor-footer {
     display: flex;
@@ -384,4 +409,384 @@ form button:hover {
     margin-top: 10px;
     font-size: 20px;
     margin-right: 50px;
+}
+
+/* ==========================================
+   MEDIA QUERIES — pegar al FINAL de tu CSS
+   (de escritorio hacia móvil)
+   ========================================== */
+
+/* ---------- Laptops pequeñas (hasta 1200px) ---------- */
+@media (max-width: 1200px) {
+    nav a {
+        font-size: 26px;
+    }
+
+    .texto-encima h3 {
+        font-size: 40px;
+    }
+
+    .texto-encima h1 {
+        font-size: 64px;
+    }
+
+    .texto-encima h2 {
+        font-size: 30px;
+    }
+
+    .Formulario {
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .Formulario h1 {
+        font-size: 42px;
+        margin: 30px 30px 30px 0;
+    }
+
+    .Logos {
+        margin-left: 0;
+    }
+
+    .info p {
+        font-size: 32px;
+    }
+
+    .info .Parrafo {
+        font-size: 24px;
+    }
+
+    .contenedor-entradas {
+        min-width: 0;
+    }
+
+    /* Los 800px fijos desbordaban el formulario */
+    form .ent-nombre,
+    form .ent-correo {
+        width: calc(100% - 40px);
+    }
+
+    .contenedor-entradas input {
+        font-size: 36px;
+    }
+
+    form h3 {
+        font-size: 48px;
+    }
+
+    form button {
+        font-size: 44px;
+    }
+
+    .contenedor-redes .redes {
+        margin-left: 60px;
+    }
+}
+
+/* ---------- Tablets (hasta 992px) ---------- */
+@media (max-width: 992px) {
+
+    /* Header: logo arriba, menú abajo */
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .info-izquierda {
+        margin-left: 0;
+    }
+
+    .Marca {
+        width: 75px;
+        height: 75px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 5px 15px 15px;
+    }
+
+    nav a {
+        font-size: 24px;
+    }
+
+    .opciones {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 20px;
+    }
+
+    /* Imagen principal: el texto se posiciona dentro de la imagen,
+       así no se descuadra cuando el header ocupa más alto */
+    .contenedor-imagen {
+        position: relative;
+        height: 300px;
+    }
+
+    .contenedor-imagen img {
+        height: 300px;
+    }
+
+    .texto-encima {
+        top: 50%;
+        width: 90%;
+    }
+
+    .texto-encima h3 {
+        font-size: 32px;
+    }
+
+    .texto-encima h1 {
+        font-size: 52px;
+    }
+
+    .texto-encima h2 {
+        font-size: 24px;
+    }
+
+    /* Formulario: una sola columna */
+    .Formulario {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 30px 25px;
+        gap: 25px;
+    }
+
+    .Formulario h1 {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .Logos {
+        margin-left: 0;
+        gap: 20px;
+    }
+
+    .contenedor-entradas {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    form h3 {
+        font-size: 40px;
+    }
+
+    .contenedor-entradas input {
+        font-size: 30px;
+    }
+
+    form button {
+        font-size: 36px;
+        width: calc(100% - 40px);
+    }
+
+    .contenedor-redes {
+        justify-content: center;
+    }
+
+    .contenedor-redes .redes {
+        margin-left: 0;
+    }
+
+    /* Footer en columna */
+    .contenedor-footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .contenedor-footer p {
+        margin-left: 0;
+        font-size: 26px;
+    }
+
+    .contenedor-footer .info-izquierda {
+        margin-left: 0;
+    }
+
+    .contenedor-footer .info-derecha {
+        margin-right: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .info-derecha p {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+/* ---------- Móviles grandes (hasta 768px) ---------- */
+@media (max-width: 768px) {
+    .Marca {
+        width: 60px;
+        height: 60px;
+    }
+
+    nav a {
+        font-size: 20px;
+        padding: 3px;
+    }
+
+    .contenedor-imagen {
+        height: 260px;
+    }
+
+    .contenedor-imagen img {
+        height: 260px;
+    }
+
+    .texto-encima h3 {
+        font-size: 26px;
+    }
+
+    .texto-encima h1 {
+        font-size: 40px;
+    }
+
+    .texto-encima h2 {
+        font-size: 20px;
+    }
+
+    .Formulario {
+        padding: 20px 15px;
+    }
+
+    .Formulario h1 {
+        font-size: 34px;
+    }
+
+    .Logos .Telefono,
+    .Logos .Mensaje,
+    .mapa-info .Mapa,
+    .reloj-info .Reloj {
+        width: 45px;
+        height: 45px;
+    }
+
+    .telefono-info,
+    .mensaje-info,
+    .mapa-info,
+    .reloj-info {
+        gap: 15px;
+    }
+
+    .info p {
+        font-size: 26px;
+    }
+
+    .info .Parrafo {
+        font-size: 20px;
+    }
+
+    form {
+        margin: 12px;
+    }
+
+    form h3 {
+        font-size: 32px;
+    }
+
+    .contenedor-entradas input {
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    form .ent-nombre,
+    form .ent-correo {
+        width: calc(100% - 20px);
+    }
+
+    form button {
+        font-size: 30px;
+        margin: 10px;
+        width: calc(100% - 20px);
+    }
+
+    .fa-square-instagram,
+    .fa-facebook-f,
+    .fa-tiktok,
+    .fa-youtube {
+        font-size: 32px;
+    }
+
+    .contenedor-redes p {
+        font-size: 24px;
+    }
+}
+
+/* ---------- Móviles pequeños (hasta 480px) ---------- */
+@media (max-width: 480px) {
+    nav a {
+        font-size: 17px;
+    }
+
+    .opciones {
+        gap: 6px 14px;
+    }
+
+    .contenedor-imagen {
+        height: 220px;
+    }
+
+    .contenedor-imagen img {
+        height: 220px;
+    }
+
+    .texto-encima h3 {
+        font-size: 20px;
+    }
+
+    .texto-encima h1 {
+        font-size: 30px;
+    }
+
+    .texto-encima h2 {
+        font-size: 16px;
+    }
+
+    .Formulario h1 {
+        font-size: 28px;
+        text-underline-offset: 6px;
+    }
+
+    .Logos .Telefono,
+    .Logos .Mensaje,
+    .mapa-info .Mapa,
+    .reloj-info .Reloj {
+        width: 38px;
+        height: 38px;
+    }
+
+    .info p {
+        font-size: 22px;
+    }
+
+    .info .Parrafo {
+        font-size: 18px;
+    }
+
+    form h3 {
+        font-size: 26px;
+    }
+
+    .contenedor-entradas input {
+        font-size: 20px;
+    }
+
+    form button {
+        font-size: 24px;
+    }
+
+    .contenedor-footer p {
+        font-size: 22px;
+    }
+
+    .info-derecha p {
+        font-size: 16px;
+    }
 }
